@@ -1,4 +1,4 @@
-<%= form_with model: @task do |form| %>
+<%= form_with model: @task do |f| %>
   <%= f.label :name %>
   <%= f.text_field :title %>
   <%= f.label :description %>
@@ -7,3 +7,5 @@
   <%= f.check_box :completed %>
   <%= f.submit 'Create' %>
 <% end %>
+
+<%# <%= link_to "Edit", tasks_path %>
