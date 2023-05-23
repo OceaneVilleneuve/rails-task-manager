@@ -1,0 +1,9 @@
+<%=link_to "+ Add a new task",
+{:action => 'new'}%>
+<%# pour pouvoir faire le link entre l'index et la show!! %>
+
+<%@task.each do |task| %>
+<%=link_to task.title,
+{:action => 'show', :id => task.id}%>
+<%# pour pouvoir faire le link entre l'index et la show!! %>
+<%end%>
